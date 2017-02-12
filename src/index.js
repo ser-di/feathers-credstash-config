@@ -1,6 +1,6 @@
 import Credstash from 'credstash'
 import deasync from 'deasync'
-import Debug from 'debug'h
+import Debug from 'debug'
 
 export default module.exports = function (table, options) {
   const debug = Debug('feathers:credstash')
