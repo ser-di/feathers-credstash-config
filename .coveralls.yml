@@ -1,2 +1,2 @@
 service_name: travis-pro
-repo_token: af5jpr4y1zpTDzYs9ac6UTQiSvcka62EQ
+repo_token: $COVERALLS_TOKEN
