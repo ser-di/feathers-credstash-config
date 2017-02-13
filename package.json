@@ -19,7 +19,7 @@
     "watch": "babel --watch -d lib/ src/",
     "lint": "eslint-if-supported semistandard --fix",
     "mocha": "mocha --recursive test/ --compilers js:babel-core/register",
-    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --compilers js:babel-core/register",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "test": "npm run build && npm run lint && npm run coverage"
   },
   "semistandard": {
@@ -65,7 +65,7 @@
     "babel-polyfill": "^6.20.0",
     "babel-preset-es2015": "^6.16.0",
     "chai": "^3.5.0",
-    "coveralls": "2.11.6",
+    "coveralls": "^2.11.6",
     "eslint-if-supported": "^1.0.1",
     "feathers": "^2.0.3",
     "feathers-hooks": "^1.7.1",
@@ -73,6 +73,7 @@
     "feathers-tests-fake-app-users": "^1.0.0",
     "istanbul": "1.1.0-alpha.1",
     "mocha": "^3.1.2",
+    "mocha-lcov-reporter": "^1.2.0",
     "nsp": "^2.6.2",
     "semistandard": "^9.1.0",
     "shx": "^0.2.2"
