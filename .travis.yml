@@ -6,6 +6,6 @@ node_js:
   - '5'
 cache: yarn
 before_install:
-  - time npm i -g yarn --cache-min 999999999
+  - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 install:
   time yarn
