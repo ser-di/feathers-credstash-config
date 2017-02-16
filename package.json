@@ -46,9 +46,9 @@
   },
   "homepage": "https://github.com/ser-di/feathers-credstash-config#readme",
   "dependencies": {
-    "aes-js": "0.2.2",
-    "async": "1.5.2",
-    "aws-sdk": "2.2.35",
+    "aes-js": "^3.0.0",
+    "async": "^2.1.4",
+    "aws-sdk": "^2.14.0",
     "credstash": "^1.0.42",
     "deasync": "^0.1.9",
     "debug": "^2.2.0",
@@ -57,7 +57,7 @@
     "xtend": "4.0.1"
   },
   "devDependencies": {
-    "aws-sdk-mock": "1.0.5",
+    "aws-sdk-mock": "^1.6.1",
     "babel-cli": "^6.16.0",
     "babel-core": "^6.17.0",
     "babel-istanbul": "^0.12.1",
