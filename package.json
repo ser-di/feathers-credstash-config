@@ -19,7 +19,7 @@
     "watch": "babel --watch -d lib/ src/",
     "lint": "eslint-if-supported semistandard --fix",
     "mocha": "mocha --recursive test/ --compilers js:babel-core/register",
-    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && codeclimate-test-reporter < ./coverage/lcov.info && rm -rf ./coverage",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && codeclimate-test-reporter < ./coverage/lcov.info",
     "test": "npm run build && npm run lint && npm run coverage"
   },
   "semistandard": {
