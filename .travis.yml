@@ -4,5 +4,3 @@ node_js:
   - node
   - '6'
   - '5'
-before_install:
-  npm install -g codeclimate-test-reporter
